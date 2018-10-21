@@ -47,8 +47,6 @@
     .slider__low_item.owl-theme .owl-dots .owl-dot span{
         margin: 5px 3px;
         background: #d8ebff;
-        width: 15px;
-        height: 5px;
     }
     .slider__low_item.owl-theme .owl-nav.disabled+.owl-dots {
         margin-top: 0px;
@@ -71,9 +69,10 @@
     }
     .category-mobile ul.cat-item li{
         display: inline-block;
-        width: 16%;
+        width: 19%;
         vertical-align: top;
-        margin: 0px 4px 20px;
+        margin: 0px 0px 10px;
+        min-height: 81px;
     }
     .category-mobile ul.cat-item li span{
         display: block;
@@ -103,20 +102,14 @@
         font-size: 2em;
     }
     ul.list-of-menu{
-        background: -moz-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(193,85,246,1)), color-stop(100%, rgba(65,104,212,1)));
-        background: -webkit-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
-        background: -o-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
-        background: -ms-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
-        background: linear-gradient(to right, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c155f6', endColorstr='#4168d4', GradientType=1 );
+        background: #ecf0fb;
         padding: 10px 20px;
     }
     ul.list-of-menu li{
         width: auto;
     }
     ul.list-of-menu li.bar .fa{
-        color: #fff;
+        color: #707281;
         font-size: 20px;
     }
     ul.list-of-menu .dropdown-menu{
@@ -134,10 +127,11 @@
         margin-bottom: 0px;
         position: relative;
         margin-left: 10px;
+        width: 100%;
     }
     ul.list-of-menu li input{
         border: 1px solid #c1cadb;
-        border-radius: 50px;
+        border-radius: 5px;
         font-size: 12px;
     }
     ul.list-of-menu li .form-group button{
@@ -148,23 +142,29 @@
     }
     ul.list-of-menu li.dropdown,
     ul.list-of-menu li.last{
-        width: 15%;
+        width: 12%;
         text-align: center;
         position: relative;
+    }
+    ul.list-of-menu li.last.before{
+        margin-left: 15px;
     }
     ul.list-of-menu li.dropdown .fa,
     ul.list-of-menu li.last .fa{
         font-size: 20px;
-        color: #fff;
+        color: #707281;
     }
     ul.list-of-menu li span.notif{
-        background: #fff;
-        color: #4c65cf;
+        background: #ff3185;
+        color: #f7f7f7;
         font-size: 11px;
         height: 14px;
         width: 14px;
         line-height: 14px;
         top: -4px;
+        position: absolute;
+        border-radius: 50%;
+        right: 0px;
     }
     .flash {
         padding: 20px 0px 20px;
@@ -330,7 +330,7 @@
         font-size: 13px;
     }
     footer{
-        padding-bottom: 47px;
+        /* padding-bottom: 47px; */
     }
     footer .widget{
         padding: 30px 0px;
@@ -367,6 +367,86 @@
         font-size: 9px;
         display: block;
         line-height: 9px;
+    }
+    .bg-bluegray{
+        background-color: #f5f9fc;
+        border-bottom: 5px solid #de497b;
+        margin-bottom: 10px;
+    }
+    .popular-listings{
+        display: block;
+    }
+    .popular-listings .core {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .popular-listings .core:nth-child(2),
+    .popular-listings .core:nth-child(4){
+        margin-right: 0px;
+    }
+    .popular-listings .core .inner-info {
+        flex: none;
+        padding: 0px 5px;
+        display: inline-block;
+        width: 76%;
+    }
+    .popular-listings .core .inner-info p {
+        font-size: 12px;
+    }
+    .popular-listings .core .inner-info span{
+        font-size: 11px;
+    }
+    .popular-listings .core .img-info{
+        display: inline-block;
+        width: 21%;
+        vertical-align: text-bottom;
+    }
+    .full-banner {
+        margin-bottom: 30px;
+    }
+    .header-flash h5 {
+        font-size: 18px;
+        display: inline-block;
+        color: #ffffff;
+    }
+    .header-flash .timer span {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #f0387b;
+    }
+    .header-flash a.see-more {
+        float: right;
+        margin-top: 0px;
+        background-color: #ecf0fb;
+        border-radius: 5px;
+        padding: 4px 5px;
+        font-size: 12px;
+        color: #f0387b;
+    }
+    .slider_flash_mobile .item{
+        border: 1px solid #c1cadb;
+        background: #ffffff;
+    }
+    .slider_flash_mobile .item .description{
+        padding: 10px 5px;
+    }
+    .slider_flash_mobile .item p{
+        margin-bottom: 0px;
+    }
+    .slider_flash_mobile .item p.name-product{
+        color: #697687;
+        font-size: 12px;
+    }
+    .slider_flash_mobile .item p.price{
+        color: #de497b;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .slider_flash_mobile .item p.progress-title{
+        font-size: 10px;
+        color: #697687;
+        margin-top: 6px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
