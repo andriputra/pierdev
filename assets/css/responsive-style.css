@@ -140,6 +140,9 @@
         top: 3px;
         left: 0px;
         color: #d9dadb;
+        background-color: transparent;
+        border: none;
+        height: 26px;
     }
     ul.list-of-menu li.dropdown,
     ul.list-of-menu li.last{
@@ -471,6 +474,32 @@
         font-size: 9px;
         display: block;
         line-height: 9px;
+    }
+    ul.list-of-menu .dropdown-menu.cart{
+        width: 300px;
+        padding: 20px 15px;
+    }
+    ul.list-of-menu .dropdown-menu.cart button{
+        position: inherit;
+        height: auto;
+    }
+    ul.list-of-menu .dropdown-menu.cart button.gradient-magenta-color{
+        color: #ffffff;
+    }
+    ul.list-of-menu .dropdown-menu.cart button.btn-white{
+        border: 1px solid #becadc;
+        margin-top: 10px;
+    }
+    ul.list-of-menu .dropdown-menu.cart .form-group{
+        margin-left: 0px;
+    }
+    ul.list-of-menu .dropdown-menu.cart a{
+        display: inline-block;
+    }
+    ul.list-of-menu .dropdown-menu.cart .subtotal span{
+        font-size: 16px;
+        display: block;
+        line-height: 25px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){

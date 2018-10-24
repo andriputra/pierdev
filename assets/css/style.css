@@ -469,6 +469,23 @@ ul.items li .remove a .fa{
 .subtotal{
   margin-bottom: 10px;
 }
+ul.items.notification li{
+  display: flex;
+}
+ul.items.notification li .item-text{
+  flex: 1 1 0;
+}
+ul.items.notification li .count{
+  flex: 0 0 0;
+}
+ul.items.notification li:last-child{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+ul.items.notification li .item-text i.fa{
+  width: 20px;
+}
 /* end MAIN MENU */
 
 /* METHODE */
