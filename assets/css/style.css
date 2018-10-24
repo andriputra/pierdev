@@ -19,6 +19,9 @@ ul{
 .gradient-color{
   background-color: #de497b;
 }
+select:focus{
+  outline: none;
+}
 
 
 /* Pallet Gradient Color */
@@ -387,10 +390,16 @@ ul{
   color: #fff;
   font-size: 14px;
 }
-.main-form .form-group a.inner-cat{
+.main-form .form-group .inner-cat{
   position: absolute;
-  right: 75px;
-  top: 10px;
+  right: 60px;
+  top: 0px;
+  width: auto;
+  border: none;
+  border-radius: 0px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #495057;
 }
 .notify{
   margin-top: 17px;
@@ -417,6 +426,48 @@ ul{
   text-align: center;
   line-height: 18px;
   border-radius: 50%;
+}
+.dropdown-menu.cart{
+  width: 320px;
+  padding: 20px 15px;
+}
+.info-cart{
+  font-size: 14px;
+  border-bottom: 1px solid #becadc;
+  padding-bottom: 10px;
+}
+ul.items li{
+  margin: 0px;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid #becadc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+ul.items li:first-child{
+  line-height: 20px;  
+}
+ul.items li .img-produk{
+  flex: 2;
+}
+ul.items li .produk-desc{
+  flex: 3;
+  padding-top: 13px;
+}
+ul.items li .remove{
+  flex: 1;
+  text-align: center;
+  padding-top: 13px;
+}
+ul.items li .remove a .fa{
+  font-size: 18px;
+}
+.main-menu ul.items{
+  text-align: left;
+}
+.subtotal{
+  margin-bottom: 10px;
 }
 /* end MAIN MENU */
 
@@ -505,6 +556,18 @@ ul.promo-list li img{
   border: 1px solid #d6d6d6;
   border-radius: 4px;
   padding: 0px 2px;
+}
+.btn-rounded{
+  border-radius: 50px;
+  color: #ffff;
+  width: 100%;
+  text-align: center;
+  letter-spacing: .2em;
+}
+.btn-white{
+  background: #ffffff;
+  color: #738292;
+  border: 1px solid #becadc;
 }
 /* end METHODE */
 

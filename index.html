@@ -63,7 +63,33 @@
               <form class="main-form">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Cari produk, merek dan toko">
-                  <a href="#" class="inner-cat">Semua Kategori <i class="fa fa-chevron-down"></i></a>
+                  <select id="select" name="select" class="inner-cat">
+                    <option value="0" selected="">Semua Kategori</option>
+                    <option value="elektronik"> Elektronik</option>
+                    <option value="handphone-tablet"> Handphone &amp; Tablet</option>
+                    <option value="laptop-aksesoris"> Laptop &amp; Aksesoris</option>
+                    <option value="fashion-wanita"> Fashion Wanita</option>
+                    <option value="fashion-pria"> Fashion Pria</option>
+                    <option value="fashion-muslim"> Fashion Muslim</option>
+                    <option value="fashion-anak"> Fashion Anak</option>
+                    <option value="kecantikan"> Kecantikan</option>
+                    <option value="kesehatan"> Kesehatan</option>
+                    <option value="perawatan-tubuh"> Perawatan Tubuh</option>
+                    <option value="komputer-aksesoris"> Komputer &amp; Aksesoris</option>
+                    <option value="kamera"> Kamera</option>
+                    <option value="gaming"> Gaming</option>
+                    <option value="pc-dan-laptop-gaming"> PC dan Laptop Gaming</option>
+                    <option value="ibu-bayi"> Ibu &amp; Bayi</option>
+                    <option value="rumah-tangga"> Rumah Tangga</option>
+                    <option value="dapur"> Dapur</option>
+                    <option value="makanan-minuman"> Makanan &amp; Minuman</option>
+                    <option value="souvenir"> Souvenir</option>
+                    <option value="souvenir-kado"> Souvenir &amp; Kado</option>
+                    <option value="buku"> Buku</option>
+                    <option value="otomotif"> Otomotif</option>
+                    <option value="olahraga"> Olahraga</option>
+                    <option value="film-musik"> Film &amp; Musik</option>
+                  </select>
                   <button class="btn-search">Cari</button>
                 </div>
               </form>
@@ -74,9 +100,43 @@
               <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
                 <span class="notif">0</span>
               </a>
-              <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <a href="#" class="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span class="notif">3</span>
               </a>
+              <div class="dropdown-menu cart dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="info-cart">
+                  <a href="#">2</a> Item(s) in My Cart
+                </div>
+                <ul class="items">
+                  <li>
+                    <div class="img-produk">
+                      <img src="assets/img/phone.jpg" alt="product" class="img-fluid">
+                    </div>
+                    <div class="produk-desc">
+                      <p>Mastell Juno S6 - Red, Masener</p>
+                      <p class="price">1 x <strong>Rp 12,900,600</strong></p>
+                    </div>
+                    <div class="remove"><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="img-produk">
+                      <img src="assets/img/smart-watch.jpg" alt="product" class="img-fluid">
+                    </div>
+                    <div class="produk-desc">
+                      <p>Mastell Juno S6 - Red, Masener</p>
+                      <p class="price">1 x <strong>Rp 12,900,600</strong></p>
+                    </div>
+                    <div class="remove"><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                  </li>
+                </ul>
+                <div class="subtotal"><span>Subtotal: <strong>Rp 13,130,000</strong></span></div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-rounded gradient-magenta-color">VIEW CART</button>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-rounded btn-white">CHECK OUT</button>
+                </div>
+              </div>
               <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>
                 <span class="notif">3</span>
               </a>
