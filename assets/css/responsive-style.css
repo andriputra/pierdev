@@ -133,11 +133,12 @@
         border: 1px solid #c1cadb;
         border-radius: 5px;
         font-size: 12px;
+        padding-left: 30px;
     }
     ul.list-of-menu li .form-group button{
         position: absolute;
         top: 3px;
-        right: 0px;
+        left: 0px;
         color: #d9dadb;
     }
     ul.list-of-menu li.dropdown,
