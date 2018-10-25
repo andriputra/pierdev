@@ -146,7 +146,7 @@
     }
     ul.list-of-menu li.dropdown,
     ul.list-of-menu li.last{
-        width: 12%;
+        width: 11%;
         text-align: center;
         position: relative;
     }
@@ -359,13 +359,11 @@
         text-align: center;
         border-top: 1px solid #dde4ee;
     }
-    .mobile-menu li{
-        display: inline-block;
-        width: 24%;
-        color: #30323e;
-    }
     .mobile-menu li i.fa{
         font-size: 16px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
     }
     .mobile-menu li span{
         font-size: 9px;
@@ -464,7 +462,7 @@
     }
     .mobile-menu li{
         display: inline-block;
-        width: 24%;
+        width: 19%;
         color: #30323e;
     }
     .mobile-menu li i.fa{
@@ -500,6 +498,42 @@
         font-size: 16px;
         display: block;
         line-height: 25px;
+    }
+    .mobile-menu ul.items.notification li{
+        padding-bottom: 0px;
+    }
+    .mobile-menu ul.items.notification li span{
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .mobile-menu ul.items.notification li .count a{
+        font-size: 14px;
+    }
+    .mobile-menu ul.items.notification li .fa{
+        font-size: 18px;
+    }
+    .mobile-nav .mobile-menu li.notify-list{
+        position: relative;
+    }
+    .mobile-nav .mobile-menu li.notify-list .notify-bottom{
+        background: #ff3185;
+        color: #f7f7f7;
+        font-size: 11px;
+        height: 14px;
+        width: 14px;
+        line-height: 14px;
+        top: -4px;
+        position: absolute;
+        border-radius: 50%;
+        right: 10px;
+    }
+    .slider_flash .owl-item .item p.name-product, 
+    .slider_promo_list .owl-item .item p.name-product {
+        font-size: 12px;
+    }
+    .slider_flash .owl-item .item p.price {
+        font-size: 18px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){

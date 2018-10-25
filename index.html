@@ -253,17 +253,12 @@
         </form>
       </li>
       <li class="last before">
-        <a class="links" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
+        <a class="links dropdown" href="#" id="dropdownMenuWishlist_Mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-heart-o" aria-hidden="true"></i>
           <span class="notif">0</span>
         </a>
-      </li>
-      <li class="last">
-        <a href="#" class="links" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <span class="notif">2</span>
-        </a>
-        <div class="dropdown-menu cart dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu cart dropdown-menu-right" aria-labelledby="dropdownMenuWishlist_Mobile">
           <div class="info-cart">
-            <a href="#">2</a> Item(s) in My Cart
+            <a href="#">2</a> Item(s) in My Wishlist
           </div>
           <ul class="items">
             <li>
@@ -289,11 +284,48 @@
           </ul>
           <div class="subtotal"><span>Subtotal: <strong>Rp 13,130,000</strong></span></div>
           <div class="form-group">
-            <button type="button" class="btn btn-rounded gradient-magenta-color">VIEW CART</button>
+            <button type="button" class="btn btn-rounded gradient-magenta-color">VIEW WISHLIST</button>
           </div>
           <div class="form-group">
             <button type="button" class="btn btn-rounded btn-white">CHECK OUT</button>
           </div>
+        </div>
+      </li>
+      <li class="last">
+        <a href="#" class="links" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o" aria-hidden="true"></i>
+          <span class="notif">2</span>
+        </a>
+        <div class="dropdown-menu cart dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <ul class="items notification">
+            <li>
+              <div class="item-text">
+                <i class="fa fa-envelope" aria-label="hidden"></i>
+                <span>Chat</span>
+              </div>
+              <div class="count"><a href="#">3</a></div>
+            </li>
+            <li>
+              <div class="item-text">
+                <i class="fa fa-shopping-cart" aria-label="hidden"></i>
+                <span>Pembelian</span>
+              </div>
+              <div class="count"><a href="#">6</a></div>
+            </li>
+            <li>
+              <div class="item-text">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                <span>Resolution</span>
+              </div>
+              <div class="count"><a href="#">4</a></div>
+            </li>
+            <li>
+              <div class="item-text">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Info Pengguna</span>
+              </div>
+              <div class="count"><a href="#">1</a></div>
+            </li>
+          </ul>
         </div>
       </li>
     </ul>
@@ -302,7 +334,8 @@
     <ul class="mobile-menu">
       <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
       <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><span>Inbox</span></li>
-      <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Keranjang</span></a></li>
+      <li class="notify-list"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Keranjang</span> <span class="notify-bottom">2</span></a></li>
+      <li><a href="#"><i class="fa fa-database" aria-hidden="true"></i><span>Katalog</span></a></li>
       <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><span>Akun</span></a></li>
     </ul>
   </div>
@@ -948,9 +981,9 @@ $('.owl-carousel.slider_flash').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1,
+            items:2,
             nav:false,
-            margin: 5
+            margin: 10
         },
         600:{
             items:1,
@@ -990,9 +1023,9 @@ $('.owl-carousel.slider_promo_list').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1,
+            items:2,
             nav:false,
-            margin: 14
+            margin: 10
         },
         600:{
             items:1,
@@ -1016,9 +1049,9 @@ $('.owl-carousel.pricer_slider').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1,
+            items:2,
             nav:false,
-            margin: 25
+            margin: 10
         },
         600:{
             items:1,
