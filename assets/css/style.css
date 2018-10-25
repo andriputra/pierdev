@@ -1078,6 +1078,9 @@ p.disc{
 }
 .full-banner img{
   width: 100%;
+  height: 280px;
+  object-fit: cover;
+  image-rendering: pixelated;
 }
 .wishlist_slider .item{
   position: relative;
