@@ -358,9 +358,8 @@ select:focus{
 .main-menu ul.header-cat li a{
   color: #707281;
   display: block;
-  padding: 10px;
 }
-.main-menu ul.header-cat li a:hover{
+.main-menu ul.header-cat li:hover{
   background-color: #ecf0fb;
 }
 .main-menu ul.header-cat li a .fa{
@@ -368,6 +367,37 @@ select:focus{
   margin-top: 4px;
 }
 /* end HEADER INFO */
+
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0px;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: -1px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+  padding: 0px;
+}
+.dropdown-submenu:hover>.dropdown-menu li a{
+  padding: 10px;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
 
 /* MAIN MENU  */
 .logo img{
@@ -1114,3 +1144,58 @@ p.disc{
   color: #707281;
 }
 /* end HOME */
+
+.category ul li {
+  margin-bottom: 10px;
+}
+.category ul li.icon-1,
+.category ul li.icon-2,
+.category ul li.icon-3,
+.category ul li.icon-4,
+.category ul li.icon-5,
+.category ul li.icon-6,
+.category ul li.icon-7,
+.category ul li.icon-8,
+.category ul li.icon-9,
+.category ul li.icon-10,
+.category ul li.icon-11{
+  background: url('../img/sprit-icon.png') no-repeat;
+  display: block;
+  background-position: 1px -8px;
+  padding-left: 38px;
+  padding-bottom: 34px;
+  padding: 10px 10px 10px 40px;
+}
+.category ul li.icon-2{
+  background-position: 5px -45px;
+}
+.category ul li.icon-3{
+  background-position: -2px -80px;
+}
+.category ul li.icon-4{
+  background-position: 0px -190px;
+}
+.category ul li.icon-5{
+  background-position: 0px -154px;
+}
+.category ul li.icon-6{
+  background-position: 0px -189px;
+}
+.category ul li.icon-7{
+  background-position: 0px -225px;
+}
+.category ul li.icon-8{
+  background-position: 1px -262px;
+}
+.category ul li.icon-9{
+  background-position: 0px -298px;
+}
+.category ul li.icon-10{
+  background-position: 3px -333px;
+}
+.category ul li.icon-11{
+  background-position: 2px -369px;
+}
+.category ul li.icon-12{
+  background-position: -2px -55px;
+}
